@@ -20,5 +20,10 @@ namespace EnjoyStLouis.Data.Repositories
         {
             return new BaseRepository<Buisness>(context);
         }
+
+        public IRepository<RateReview> GetRateReviewRepository()
+        {
+            return new BaseRepository<RateReview>(context);
+        }
     }
 }
