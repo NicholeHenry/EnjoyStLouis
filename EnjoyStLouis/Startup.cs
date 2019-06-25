@@ -13,6 +13,7 @@ using Microsoft.EntityFrameworkCore;
 using EnjoyStLouis.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using EnjoyStLouis.Data.Repositories;
 
 namespace EnjoyStLouis
 {
@@ -38,7 +39,10 @@ namespace EnjoyStLouis
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
+            services.AddScoped<Factory>();
+
             services.AddDefaultIdentity<IdentityUser>()
+                 
                 .AddDefaultUI(UIFramework.Bootstrap4)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
