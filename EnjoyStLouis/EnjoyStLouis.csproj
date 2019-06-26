@@ -15,7 +15,7 @@
 
 
   <ItemGroup>
-    <Folder Include="ViewModels\RateReview\" />
+    <Folder Include="Views\RateReview\" />
   </ItemGroup>
 
 </Project>
