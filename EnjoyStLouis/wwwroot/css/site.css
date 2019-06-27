@@ -1,10 +1,15 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
-a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+.navbar-default a.navbar-brand {
+    color: #d6d6d6;
+    background-image: url('../../resources/gold (4).jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
 }
 
 /* Sticky footer styles
@@ -19,7 +24,8 @@ html {
 }
 
 .border-top {
-  border-top: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+    
 }
 .border-bottom {
   border-bottom: 1px solid #e5e5e5;
@@ -44,7 +50,19 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+
 }
+#grad {
+    background-image: linear-gradient(to right,blue, white 50%, red);
+}
+#image {
+    background-image: url('file:///C:\Users\nicho\AppData\Local\Temp\tmp7120.tmp\Gold (4).JPG');
+     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
 .footer {
   position: absolute;
   bottom: 0;

@@ -4,13 +4,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using EnjoyStLouis.Data.Repositories;
 using EnjoyStLouis.Models;
+using EnjoyStLouis.ViewModels.RateReview;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EnjoyStLouis.Controllers
 {
     public class RateReviewController : Controller
     {
-       /* public IActionResult Index()
+        public IActionResult Index()
         {
             return View();
         }
@@ -47,6 +48,6 @@ namespace EnjoyStLouis.Controllers
             repositoryFactory.GetRateReviewRepository().Delete(id);
             return RedirectToAction(actionName: nameof(Index));
         }
-        */
+        
     }
 }
