@@ -1,13 +1,18 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
-
-.navbar-default a.navbar-brand {
-    color: #d6d6d6;
+.navbar {
+    width: 100%;
+    background-color: goldenrod;
     background-image: url('../../resources/gold (4).jpg');
+   
+    
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    white-space: normal;
+}
+ a.navbar-brand {
+   
+   
     text-align: center;
     word-break: break-all;
 }
@@ -19,7 +24,8 @@ html {
 }
 @media (min-width: 768px) {
   html {
-    font-size: 16px;
+    font-size: 18px;
+   
   }
 }
 
