@@ -34,7 +34,7 @@ namespace EnjoyStLouis.ViewModels.RateReview
             return new SelectList(rateSelectedItem);
         }
 
-        private string GetReviews()
+       
 
         internal void Persist()
         {
@@ -42,9 +42,9 @@ namespace EnjoyStLouis.ViewModels.RateReview
             {
 
                 BuisnessId = this.BuisnessId,
-                Rating = this.Rating
-                Review = this.Review
-                BuisnessName = Buisness.Name
+                Rating = this.Rating,
+                Review = this.Review,
+                BuisnessName = this.BuisnessName
             };
 
             repositoryFactory.GetRateReviewRepository().Save(rateReview);
