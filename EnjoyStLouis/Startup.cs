@@ -37,7 +37,8 @@ namespace EnjoyStLouis
             });
 
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(
+                options.UseLazyLoadingProxies()
+                .UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddScoped<Factory>();
 
