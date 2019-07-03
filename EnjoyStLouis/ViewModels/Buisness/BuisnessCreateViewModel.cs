@@ -18,14 +18,9 @@ namespace EnjoyStLouis.ViewModels
         [StringLength(2-200)]
         public string Description { get; set; }
         public Regions Region { get;  set; }
-        
         public List<Category> Categories { get; set; }
        
-        public BuisnessCreateViewModel()
-        {
-            
-        }
-
+      
         public BuisnessCreateViewModel(Factory repositoryFactory)
         {
             this.repositoryFactory = repositoryFactory;
