@@ -12,8 +12,8 @@ namespace EnjoyStLouis.Models
         public string Name { get; set; }
         public string Description { get; set; }
         public virtual List<RateReview> RatingAndReviews { get; set; }
-        public virtual List<string> Region { get; set; }
-        public virtual List<Categories> Categories { get; set; }
+        public enum Region { NorthCounty, SouthCounty,WestCounty, Downtown, Midtown, Uptown};
+        public virtual List<Category> Categories { get; set; }
 
     }
 }
